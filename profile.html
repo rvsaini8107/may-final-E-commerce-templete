@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <style>
+#container {
+  margin:5%;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input-filed {
+  width: 100%;
+  padding: 1%;
+}
+
+.heading {
+  text-align: center;
+}
+#error-div1{
+    display: none;
+    color: red;
+}
+#successfully-div1{
+    display: none;
+    color:green;
+}
+#error-div2{
+    display: none;
+    color: red;
+}
+#successfully-div2{
+    display: none;
+    color:green;
+}
+    </style>
+    <title>Profile</title>
+</head>
+<body>
+    <header class="header" id="header">  
+        <nav class="navbar" id="navbar">
+            <div class="nav-left-div" id="nav-left-div">
+                <div>Shopping Cart.</div>
+            </div>
+            
+        </nav>
+    </header>
+    <main class="main" id="main">
+        <div class="container" id="container">
+            <form action="#" class="form" id="form">
+                <div class="profile-main-content-div-0 profile-main-content-div" id="profile-main-content-id-0">
+                    <h2 class="heading">
+                        My Profile
+                    </h2> 
+                </div>
+                <div class="profile-main-content-div-1 profile-main-content-div" id="profile-main-content-id-1">
+                    <input type="text" name="" placeholder="First Name :" id="firstName-input" class="firstName input-filed">
+                </div>
+                <div class="profile-main-content-div-2 profile-main-content-div" id="profile-main-content-id-2">
+                    <input type="text" name="" placeholder="Last Name :" id="lastName-input" class="lastName input-filed">
+                </div>
+                <div class="input-filed error-div" id="error-div">
+                    Erorr: <span id="error-span">All the fields are mandatory </span>
+                </div>
+                <div class="input-filed successfully-div" id="successfully-div">
+                    Successfully Signed Up!
+                </div>
+                <div class="profile-main-content-div-3 profile-main-content-div" id="profile-main-content-id-3">
+                    <button class="saveInfo-btn btn" id="btn-saveInfo">Save Info</button>
+                </div>
+
+                <div class="profile-main-content-div-4 profile-main-content-div" id="profile-main-content-id-4">
+                    <h2 class="heading">
+                        Edit Password
+                    </h2> 
+                </div>
+                <div class="profile-main-content-div-5 profile-main-content-div" id="profile-main-content-id-5">
+                    <input type="password" name="" placeholder="Old Password :" id="oldPass-input" class="oldpass input-filed">
+                </div>
+                <div class="profile-main-content-div-6 profile-main-content-div" id="profile-main-content-id-6">
+                    <input type="password" name="" placeholder="New Password :" id="newPassword-input" class="newPassword input-filed">
+                </div>
+                <div class="profile-main-content-div-7 profile-main-content-div" id="profile-main-content-id-7">
+                    <input type="password" name="" placeholder="Confirm Password :" id="confirmPassword-input" class="confirmPassword input-filed">
+                </div>
+                <div class="input-filed error-div" id="error-div1">
+                    Erorr: <span id="error-span1">All the fields are mandatory </span>
+                </div>
+                <div class="input-filed successfully-div" id="successfully-div1">
+                    Successfully Signed Up!
+                </div>
+                <div class="profile-main-content-div-8 profile-main-content-div" id="profile-main-content-id-8">
+                    <button class="profile-btn btn" id="btn-changePass-btn">Change Password</button>
+                </div>
+                <div class="input-filed error-div" id="error-div2">
+                    Erorr: <span id="error-span2">All the fields are mandatory </span>
+                </div>
+                <div class="input-filed successfully-div" id="successfully-div2">
+                    Successfully Signed Up!
+                </div>
+                <div class="profile-main-content-div-9 profile-main-content-div" id="profile-main-content-id-9">
+                    <button class="logout-btn btn" id="btn-logout">Logout</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+
+    </footer>
+    <script src="./js/profile.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

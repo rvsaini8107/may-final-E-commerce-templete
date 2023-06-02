@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <style>
+#container {
+  
+  display: flex;
+  gap: 20px;
+}
+
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input-filed {
+  width: 98%;
+  padding: 1%;
+  margin: 2% 0px;
+}
+
+.heading {
+  text-align: center;
+}
+
+/*home main */
+.main-content-div {
+  display: flex;
+  gap: 15px;
+}
+.home-main-img {
+  width: 100%;
+}
+#btn-Signup {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+.btn-white {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+#btn-apply-filter {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  margin: 15px;
+}
+input {
+    outline: none;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-div-left {
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 17%;
+}
+.left-div-content {
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 10%;
+  padding: 9%;
+}
+
+
+.main-div-right {
+  flex-grow: 2;
+  width: 78%;
+}
+
+#search-input {
+  background-image: url(./images/searchicon.png);
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding: 1% 40px;
+  font-size: large;
+}
+.activeBtn {
+  background: black;
+  color: white;
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.cards {
+  margin-top: 2%;
+ 
+}
+
+.cards > h3 {
+  margin: 2% 1px;
+}
+/* .card-head {
+  width: 250px;
+} */
+.img-card.img-card-1 {
+  width: 100%;
+}
+#all-cards {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  border: 1px solid black;
+  width: 280px;
+}
+.btnWidth-100{
+    width: 100%;
+}
+.card-body {
+  padding: 1% 10%;
+}
+.price-size {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-divs {
+  display: flex;
+  gap: 5px;
+}
+.small-color-div {
+  width: 13px;
+  height: 13px;
+  background-color: yellow;
+  border-radius: 15px;
+}
+.color-show {
+  display: flex;
+  gap: 15px;
+}
+.rating {
+  display: flex;
+  gap: 15px;
+}
+.rating-small-divs {
+  display: flex;
+}
+.star-img-icon {
+  width: 100%;
+}
+/* scroll */
+.all-cards {
+  display: flex;
+  gap: 20px;
+  width: 68em;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.sm-color-1{
+    background-color: #000;
+}
+.sm-color-2{
+    background-color: #4938af;
+}
+.sm-color-3{
+    background-color: #203d3e;
+}
+.img-card.img-card-1 {
+  width: 250px;
+  height: 300px;
+}
+.btn-white.btn:hover {
+  color: white;
+  background-color: black;
+  box-shadow: 1px 1px 33px rgba(0,0,0,0.9);
+}
+.btn-white.btn{
+    transition: 0.5s ease;
+}
+.showDivCss{
+    display: flex;
+    flex-wrap: wrap;
+}
+    </style>
+    <title>MeShop Shop</title>
+</head>
+<body>
+    <header class="header" id="header">  
+        <nav class="navbar" id="navbar">
+            <div class="nav-left-div" id="nav-left-div">
+                <div>MeShop.</div>
+            </div>
+            <div class="nav-right-div" id="nav-right-div">
+                <div class="menu-link-div-1 menudiv" id="menu-link-div-1">
+                <a href="#">Home</a>
+                </div>
+                <div class="menu-link-div-2 menudiv" id="menu-link-div-2">
+                    <a href="#">Login</a>
+                </div>
+                <div class="menu-link-div-3 menudiv" id="menu-link-div-3">
+                    <a href="#">Signup</a>
+                </div>
+                <div class="menu-link-div-4 menudiv" id="menu-link-div-4">
+                    <a href="#">My Cart</a>
+                </div>
+                <div class="menu-link-div-5 menudiv" id="menu-link-div-5">
+                    <a href="#">Profile</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main" id="main">
+        <div class="container" id="container">
+            <div class="main-div-left">
+                <div class="left-div-content left-content-1 colors-div">
+                    <h3>Colors</h3>
+                    <div class="color">
+                        <div class="color-div" id="color-div-1">
+                            <input type="checkbox" name="" id="color-input-1" class="color-input color-input-1" >
+                            <label for="color-input-1" id="color-label-1">Red</label>
+                        </div>
+                        <div class="color-div" id="color-div-2">
+                            <input type="checkbox" name="" id="color-input-2" class="color-input color-input-2" >
+                            <label for="color-input-2" id="color-label-2">Blue</label>
+                        </div>
+                        <div class="color-div" id="color-div-3">
+                            <input type="checkbox" name="" id="color-input-3" class="color-input color-input-3" >
+                            <label for="color-input-3" id="color-label-3">Green</label>
+                        </div>
+                        <div class="color-div" id="color-div-4">
+                            <input type="checkbox" name="" id="color-input-4" class="color-input color-input-4" >
+                            <label for="color-input-4" id="color-label-4">Black</label>
+                        </div>
+                        <div class="color-div" id="color-div-5">
+                            <input type="checkbox" name="" id="color-input-5" class="color-input color-input-4" >
+                            <label for="color-input-4" id="color-label-5">White</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-div-content left-content-2 sizes-div">
+                    <h3>Sizes</h3>
+                    <div class="color">
+                        <div class="color-div" id="color-div-1">
+                            <input type="checkbox" name="" id="color-input-1" class="color-input color-input-1" >
+                            <label for="color-input-1" id="color-label-1">M</label>
+                        </div>
+                        <div class="color-div" id="color-div-2">
+                            <input type="checkbox" name="" id="color-input-2" class="color-input color-input-2" >
+                            <label for="color-input-2" id="color-label-2">L</label>
+                        </div>
+                        <div class="color-div" id="color-div-3">
+                            <input type="checkbox" name="" id="color-input-3" class="color-input color-input-3" >
+                            <label for="color-input-3" id="color-label-3">XL</label>
+                        </div>
+                        <div class="color-div" id="color-div-4">
+                            <input type="checkbox" name="" id="color-input-4" class="color-input color-input-4" >
+                            <label for="color-input-4" id="color-label-4">XXL</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-div-content left-content-3 rating-div">
+                    <h3>Rating</h3>
+                    <div class="ratingbar">
+                        <input type="range"id="range" min="0" max="5" value="0" list="values" />
+                        <datalist id="values">
+                            <option value="0" label="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5" label="5"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <div class="left-div-content left-content-4 price-div">
+                    <h3>Price Range</h3>
+                    <div class="color">
+                        <div class="color-div" id="color-div-1">
+                            <input type="checkbox" name="" id="color-input-1" class="color-input color-input-1" >
+                            <label for="color-input-1" id="color-label-1">$0 to $25</label>
+                        </div>
+                        <div class="color-div" id="color-div-2">
+                            <input type="checkbox" name="" id="color-input-2" class="color-input color-input-2" >
+                            <label for="color-input-2" id="color-label-2">$25 to $50</label>
+                        </div>
+                        <div class="color-div" id="color-div-3">
+                            <input type="checkbox" name="" id="color-input-3" class="color-input color-input-3" >
+                            <label for="color-input-3" id="color-label-3">$50 to $100</label>
+                        </div>
+                        <div class="color-div" id="color-div-4">
+                            <input type="checkbox" name="" id="color-input-4" class="color-input color-input-4" >
+                            <label for="color-input-4" id="color-label-4">$100 onwards</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="apply-filter-btn btn" id="btn-apply-filter">Apply Filter</button>
+            </div>
+            <!-- right div -->
+            <div class="main-div-right">
+                <div class="search-bar-div">
+                    <input type="text" class="search-input input-filed" onkeyup="searchProducts()" id="search-input">
+                </div>
+                <div class="main-buttons">
+                    <button id="filter-btn-1" class="btn-white btn btn-1 activeBtn" onclick="styleDisplay('ram','Ram','filter-btn-1',true)">All</button>
+                    <button id="filter-btn-2" class="btn-white btn btn-2" onclick="styleDisplay('main-mens','all-cards-mans','filter-btn-2')">Mens</button>
+                    <button id="filter-btn-3" class="btn-white btn btn-3" onclick="styleDisplay('main-womens','all-cards-womans','filter-btn-3')">Womans</button>
+                    <button id="filter-btn-4" class="btn-white btn btn-4" onclick="styleDisplay('main-jewelry','all-cards-jewelry','filter-btn-4')">Jewellery</button>
+                    <button id="filter-btn-5" class="btn-white btn btn-5" onclick="styleDisplay('main-electronics','all-cards-electorincs','filter-btn-5')">Electronics</button>
+                </div>
+                <div class="cards" id="main-mens">
+                    <h3>Men’s Clothing</h3>
+                    <div class="all-cards" id="all-cards-mans">
+                        <!-- card 1 -->
+                        <!-- card close -->
+                  </div>
+                </div>
+
+                <div class="cards" id="main-womens">
+                    <h3>Woman’s Clothing</h3>
+                    <div class="all-cards" id="all-cards-womans">
+                        <!-- card 1 -->
+                        <!-- card close -->
+                  </div>
+                </div>
+
+                <div class="cards" id="main-jewelry">
+                    <h3>Jewelry</h3>
+                    <div class="all-cards" id="all-cards-jewelry">
+                        <!-- card 1 -->
+                        <!-- card close -->
+                  </div>
+                </div>
+
+                <div class="cards" id="main-electronics">
+                    <h3>Electronics</h3>
+                    <div class="all-cards" id="all-cards-electorincs">
+                        <!-- card 1 -->
+                        <!-- card close -->
+                  </div>
+                </div>
+
+                <!-- right close -->
+            </div>            
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+
+    </footer>
+    <script src="./js/shop.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <style>
+#container {
+  margin: 10% 5%;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input-filed {
+  width: 100%;
+  padding: 1%;
+}
+
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <header class="header" id="header">  
+        <nav class="navbar" id="navbar">
+            <div class="nav-left-div" id="nav-left-div">
+                <div>MeShop.</div>
+            </div>
+            <div class="nav-right-div" id="nav-right-div">
+                <div class="menu-link-div-1 menudiv" id="menu-link-div-1">
+                <a href="#">Home</a>
+                </div>
+                <div class="menu-link-div-2 menudiv" id="menu-link-div-2">
+                    <a href="#">Login</a>
+                </div>
+                <div class="menu-link-div-3 menudiv" id="menu-link-div-3">
+                    <a href="#">Signup</a>
+                </div>
+                <div class="menu-link-div-4 menudiv" id="menu-link-div-4">
+                    <a href="#">My Cart</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main" id="main">
+        <div class="container" id="container">
+            <form action="#" class="form" id="form" onsubmit="login(event)">
+                <div class="login-main-content-div-1 login-main-content-div" id="login-main-content-id-1">
+                    <div class="heading">
+                        Login
+                    </div> 
+                </div>
+                
+                <div class="login-main-content-div-2 login-main-content-div" id="login-main-content-id-2">
+                    <input type="email" name="" placeholder="Email :" id="email-input" class="email input-filed">
+                </div>
+                <div class="login-main-content-div-3 login-main-content-div" id="login-main-content-id-3">
+                    <input type="password" name="" placeholder="password :" id="password-input" class="password input-filed">
+                </div>
+                <div class="input-filed error-div" id="error-div">
+                    Erorr: <span id="error-span">All the fields are mandatory </span>
+                </div>
+                <div class="input-filed successfully-div" id="successfully-div">
+                    Successfully Signed Up!
+                </div>
+                <div class="login-main-content-div-4 login-main-content-div" id="login-main-content-id-4">
+                    <button class="login-btn btn" id="btn-log">Login</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+
+    </footer>
+    <script src="./main.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>
